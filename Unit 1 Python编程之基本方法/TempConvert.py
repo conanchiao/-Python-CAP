@@ -4,7 +4,7 @@ if val[-1] in ['C','c']:
     f = 1.8 * float(val[0:-1]) + 32
     print("转换后的温度为: %.2fF"%f)
 elif val[-1] in ['F','f']:
-    c = (float(val[0:-1]) - 32) / 1.8
+    c = (float(val[0:-1]) - 32) / 1.8    #float()可换为eval()
     print("转换后的温度为: %.2fC"%c)
 else:
     print("输入有误！请按规则输入。")
